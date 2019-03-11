@@ -43,10 +43,10 @@ header {
 
 .main-content {
     margin: 0;
-    padding: 12rem 0 10rem 0;
-    background: @main-bg;
+    padding-top: 4rem;
 
     h2 {
+        padding: 0 2rem;
         font-size: 3.2rem;
         text-align: center;
     }
@@ -54,13 +54,22 @@ header {
     .info-boxes {
         display: flex;
         justify-content: space-between;
-        margin: 4rem auto;
+        margin: 0 auto;
         padding: 0 5rem;
         max-width: 100rem;
+
+        @media @tablet {
+            display: block;
+        }
 
         .info-box {
             max-width: 30%;
             line-height: 1.5;
+            margin: 2rem 0;
+            
+            @media @tablet {
+                max-width: 100%;
+            }
 
             h3 {
                 color: @bold-red;
@@ -72,15 +81,20 @@ header {
 
 .learn-more {
     max-width: 100rem;
-    margin: auto;
-    padding-bottom: 10rem;
+    margin: 0 auto;
+    padding: 3rem 0 4rem 0;
     text-align: center;
-    line-height: 2;
+    line-height: 1.5;
 
     h2 {
+        padding: 1rem;
         font-size: 3.2rem;
     }
     
+    p {
+        padding: 0 5rem;
+    }
+
     button {
         margin-top: 2rem;
         padding: 1.5rem 2rem;
@@ -90,6 +104,11 @@ header {
         font-size: 1.2rem;
         font-weight: 600;
         background: @bold-red;
+
+        @media @mobile {
+            padding: 2.5rem 3rem;
+            font-size: 2rem;
+        }
     }
 }
 
@@ -97,6 +116,10 @@ footer {
     padding: 4rem 10rem;
     height: 200px;
     background: @secondary-bg;
+
+    @media @mobile {
+        text-align: center;
+    }
 
     a {
         margin-top: 3rem;
