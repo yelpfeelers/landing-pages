@@ -1,0 +1,239 @@
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Work Sans'), local('WorkSans-Regular'), url(https://fonts.gstatic.com/s/worksans/v4/QGYsz_wNahGAdqQ43Rh_fKDs.ttf) format('truetype');
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Work Sans', sans-serif;
+  background: #f5f5f5;
+}
+header {
+  height: 64px;
+  background: #d32323;
+}
+header .header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 47%;
+  height: 100%;
+  margin: auto;
+  color: #f5f5f5;
+}
+header .header-wrap h1 {
+  font-size: 2rem;
+  font-weight: 550;
+}
+header .header-wrap a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.showcase {
+  height: 308px;
+  background: #cddae2;
+}
+.showcase .main-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 4rem;
+}
+.main-content {
+  margin: 0;
+  padding: 12rem 15rem 0 15rem;
+  background: #f5f5f5;
+}
+.main-content h2 {
+  font-size: 3.2rem;
+  text-align: center;
+}
+.main-content .info-boxes {
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem auto;
+  width: 90rem;
+}
+.main-content .info-boxes .info-box {
+  width: 25rem;
+  line-height: 1.5;
+}
+.main-content .info-boxes .info-box h3 {
+  color: #d32323;
+  font-size: 2rem;
+}
+.main-content .info-boxes .info-box p {
+  font-size: 1.6rem;
+}
+.learn-more {
+  width: 47%;
+  margin: auto;
+  padding: 4rem 0;
+  text-align: center;
+  line-height: 2;
+}
+.learn-more h2 {
+  font-size: 3rem;
+}
+.learn-more p {
+  font-size: 1.6rem;
+}
+.learn-more button {
+  margin-top: 2rem;
+  padding: 1.5rem 2rem;
+  border: none;
+  border-radius: 5px;
+  color: #f5f5f5;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: #d32323;
+}
+footer {
+  padding: 4rem 10rem;
+  height: 200px;
+  background: #e6e6e6;
+}
+footer a {
+  margin-top: 3rem;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #d32323;
+}
