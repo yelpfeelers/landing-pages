@@ -179,8 +179,9 @@ header .header-wrap a {
   justify-content: center;
   align-items: center;
   height: 100%;
+  padding: 0 5rem;
   font-size: 4rem;
-  font-weight: 100;
+  font-weight: bold;
 }
 .main-content {
   margin: 0;
@@ -285,4 +286,35 @@ footer a {
   font-size: 2rem;
   text-decoration: none;
   color: #d32323;
+}
+.about-us {
+  max-width: 100rem;
+  margin: auto;
+  padding: 4rem 0;
+}
+.about-us h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+.about-us .team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0 3.5rem;
+}
+.about-us .team-members .profile-box {
+  margin: 3rem 1.5rem 0 1.5rem;
+  line-height: 1.5;
+}
+.about-us .team-members .profile-box img {
+  border: 5px solid #cddae2;
+  border-radius: 100%;
+}
+.about-us .team-members .profile-box h3 {
+  font-size: 2.1rem;
+  text-align: center;
+}
+.about-us .team-members .profile-box p {
+  text-align: center;
 }
