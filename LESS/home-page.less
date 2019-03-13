@@ -14,12 +14,28 @@ header {
         margin: auto;
         color: @main-bg;
 
-        h1 {
-            font-size: 2rem;
-            font-weight: 550;
+        .branding {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 100%;
+
+            .img-link {
+                height: 4rem;
+                
+                img {
+                    height: 100%;
+                }
+            }
+
+            h1 {
+                font-size: 2rem;
+                font-weight: 500;
+            }
+
         }
 
-        a {
+        .text-link {
             text-decoration: none;
             color: @main-bg;
             font-size: 1.5rem;
@@ -48,7 +64,15 @@ header {
         padding: 0 5rem;
         font-size: 4rem;
         font-weight: bold;
+        line-height: 1.2;
         background-color: @showcase-blue;
+
+        h2 {
+            img {
+                vertical-align: text-bottom;
+                height: 6rem;
+            }
+        }
     }
 }
 
@@ -64,6 +88,11 @@ header {
         font-size: 3rem;
         font-weight: bold;
         text-align: center;
+
+        img {
+            vertical-align: text-bottom;
+            height: 5rem;
+        }
     }
 
     .info-boxes {
@@ -188,7 +217,6 @@ footer {
             &:hover {
                 color: @hover-red;
                 transform: scale(1.1);
-                font-weight: bold;
                 transition: all 200ms ease;
             }
 
