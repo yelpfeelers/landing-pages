@@ -1,0 +1,201 @@
+// Header
+
+header {
+    height: 64px;
+    background: @bold-red;
+
+    .header-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5rem;
+        max-width: 100rem;
+        height: 100%;
+        margin: auto;
+        color: @main-bg;
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 550;
+        }
+
+        a {
+            text-decoration: none;
+            color: @main-bg;
+            font-size: 1.5rem;
+            font-weight: 500;
+            padding: 0.5rem;
+
+            &:hover {
+                color: @showcase-blue;
+                transition: all 200ms ease;
+            }
+        }
+    }
+}
+
+// Showcase
+
+.showcase {
+    height: 308px;
+    background: url("../img/taco-banner.jpg") center no-repeat;
+
+    .main-heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 0 5rem;
+        font-size: 4rem;
+        font-weight: bold;
+        background-color: @showcase-blue;
+    }
+}
+
+// Main Content
+
+.main-content {
+    margin: 0;
+    padding: 4rem 0 4rem 0;
+
+    h2 {
+        margin-bottom: 1rem;
+        padding: 0 5rem;
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .info-boxes {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 0 5rem;
+        max-width: 100rem;
+
+        @media @tablet {
+            display: block;
+        }
+
+        .info-box {
+            max-width: 30%;
+            line-height: 1.5;
+            margin-top: 2rem;
+            
+            @media @tablet {
+                max-width: 100%;
+            }
+
+            h3 {
+                color: @bold-red;
+                font-size: 2.1rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+// Info Cards
+
+.info-cards {
+    padding: 1rem 0 4rem 0;
+    background: @secondary-bg;
+
+    .cards-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        max-width: 100rem;
+        margin: auto;
+        padding: 0 3.5rem;
+    
+        .card {
+            margin: 3rem 1.5rem 0 1.5rem;
+            width: 28rem;
+            height: 20rem; 
+            border: 1px solid lightgrey;
+            background: @main-bg;
+        }
+    }
+}
+
+// Learn More
+
+.learn-more {
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 4rem 0 4rem 0;
+    text-align: center;
+    line-height: 1.5;
+
+    h2 {
+        margin-bottom: 1rem;
+        font-size: 2.1rem;
+        font-weight: bold;
+    }
+    
+    p {
+        padding: 0 5rem;
+    }
+
+    button {
+        margin-top: 2rem;
+        padding: 0.9rem 1.9rem;
+        border: 1px solid @button-border;
+        border-radius: 3px;
+        color: @main-bg;
+        font-size: 1.2rem;
+        font-weight: 600;
+        background: @bold-red;
+        cursor: pointer;
+
+        &:hover {
+            background: @hover-red;
+            transition: all 200ms ease;
+        }
+
+        @media @mobile {
+            padding: 2rem 3rem;
+            font-size: 2rem;
+        }
+    }
+}
+
+// Footer
+
+footer {
+    height: 100px;
+    background: @secondary-bg;
+
+    .footer-wrap {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        max-width: 100rem;
+        padding: 1rem 4rem;
+        margin: auto;
+
+        @media @mobile {
+            justify-content: center;
+        }
+
+        a {
+            font-size: 2rem;
+            text-decoration: none;
+            color: @bold-red;
+            padding: 0.5rem;
+
+            &:hover {
+                color: @hover-red;
+                transform: scale(1.1);
+                font-weight: bold;
+                transition: all 200ms ease;
+            }
+
+            @media @mobile {
+                padding: 1rem;
+                font-size: 3rem;
+            }
+        }
+    }
+}
