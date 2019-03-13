@@ -24,6 +24,12 @@ header {
             color: @main-bg;
             font-size: 1.5rem;
             font-weight: 500;
+            padding: 0.5rem;
+
+            &:hover {
+                color: @showcase-blue;
+                transition: all 200ms ease;
+            }
         }
     }
 }
@@ -32,7 +38,7 @@ header {
 
 .showcase {
     height: 308px;
-    background: @showcase-blue;
+    background: url("../img/taco-banner.jpg") center no-repeat;
 
     .main-heading {
         display: flex;
@@ -42,6 +48,7 @@ header {
         padding: 0 5rem;
         font-size: 4rem;
         font-weight: bold;
+        background-color: @showcase-blue;
     }
 }
 
@@ -134,15 +141,21 @@ header {
     button {
         margin-top: 2rem;
         padding: 0.9rem 1.9rem;
-        border: none;
-        border-radius: 5px;
+        border: 1px solid @button-border;
+        border-radius: 3px;
         color: @main-bg;
         font-size: 1.2rem;
         font-weight: 600;
         background: @bold-red;
+        cursor: pointer;
+
+        &:hover {
+            background: @hover-red;
+            transition: all 200ms ease;
+        }
 
         @media @mobile {
-            padding: 2.5rem 3rem;
+            padding: 2rem 3rem;
             font-size: 2rem;
         }
     }
@@ -151,18 +164,38 @@ header {
 // Footer
 
 footer {
-    padding: 4rem 10rem;
-    height: 200px;
+    height: 100px;
     background: @secondary-bg;
 
-    @media @mobile {
-        text-align: center;
-    }
+    .footer-wrap {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        max-width: 100rem;
+        padding: 1rem 4rem;
+        margin: auto;
 
-    a {
-        margin-top: 3rem;
-        font-size: 2rem;
-        text-decoration: none;
-        color: @bold-red;
+        @media @mobile {
+            justify-content: center;
+        }
+
+        a {
+            font-size: 2rem;
+            text-decoration: none;
+            color: @bold-red;
+            padding: 0.5rem;
+
+            &:hover {
+                color: @hover-red;
+                transform: scale(1.1);
+                font-weight: bold;
+                transition: all 200ms ease;
+            }
+
+            @media @mobile {
+                padding: 1rem;
+                font-size: 3rem;
+            }
+        }
     }
 }
