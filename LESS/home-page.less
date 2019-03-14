@@ -65,7 +65,7 @@ header {
         font-size: 4rem;
         font-weight: 500;
         line-height: 1.2;
-        background-color: @showcase-blue;
+        background-color: @showcase-translucent;
 
         h2 {
             img {
@@ -127,8 +127,16 @@ header {
 // Info Slides
 
 .info-slides {
-    padding: 1rem 0 4rem 0;
+    padding: 4rem 0 4rem 0;
     background: @secondary-bg;
+
+    h2 {
+        margin-bottom: 1.5rem;
+        padding: 0 5rem;
+        font-size: 3rem;
+        font-weight: 500;
+        text-align: center;
+    }
 
     .info-container {
         max-width: 100rem;
@@ -139,27 +147,41 @@ header {
             display: flex;
             justify-content: space-evenly;
             padding: 2.5rem 0;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
 
             @media @mobile {
-                flex-direction: column;
-                font-size: 1.4rem;
+                height: 4.2rem;
+                max-width: 36rem;
+                margin: 3rem auto 0 auto;
+                padding: 0;
+                border: 1px solid @tab-border;
             }
 
             .tab {
-                background: @showcase-blue;
-                padding: 1.5rem;
+                background: @main-bg;
+                padding: 1rem;
+                border: 1px solid @tab-border;
                 border-radius: 5px;
+                cursor: pointer;
                 
                 @media @mobile {
+                    margin-bottom: 0;
+                    border: none;
+                    border-radius: 0;
                     width: 100%;
-                    margin-bottom: 0.5rem;
-                    text-align: center;
+
+                    &:nth-child(even) {
+                        @media @mobile {
+                            border-left: 1px solid @tab-border;
+                            border-right: 1px solid @tab-border;
+                        }
+                    }
                 }
             }
 
             .tab-selected {
-                color: @bold-red;
+                color: @secondary-bg;
+                background: @bold-red;
             }
         }
     
