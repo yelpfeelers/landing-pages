@@ -42,6 +42,26 @@ class Slide {
 }
   
 let tabs = document.querySelectorAll('.tab');
+
 tabs.forEach(function(tab) {
     return new InfoTab(tab);
+});
+
+// Tab Events On Window Resize
+
+window.addEventListener('resize', function() {
+  let count = 0;
+  let tabStrings = ['Home Page', 'Search Results', 'Business Page'];
+
+  if (window.matchMedia('(max-width: 500px)').matches) {
+    tabs.forEach(tab => {
+      count++;
+      tab.textContent = `${count}`;
+      tab.style.textAlign = 'center';
+    });
+  } else {
+      tabs.forEach((tab, i) => {
+        tab.textContent = tabStrings[i];
+      });
+    }
 });

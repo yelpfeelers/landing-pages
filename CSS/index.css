@@ -184,7 +184,7 @@ header .header-wrap .text-link {
   padding: 0.5rem;
 }
 header .header-wrap .text-link:hover {
-  color: rgba(188, 207, 219, 0.7);
+  color: #cddae2;
   transition: all 200ms ease;
 }
 .showcase {
@@ -249,8 +249,15 @@ header .header-wrap .text-link:hover {
   font-weight: 500;
 }
 .info-slides {
-  padding: 1rem 0 4rem 0;
+  padding: 4rem 0 4rem 0;
   background: #e6e6e6;
+}
+.info-slides h2 {
+  margin-bottom: 1.5rem;
+  padding: 0 5rem;
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
 }
 .info-slides .info-container {
   max-width: 100rem;
@@ -261,28 +268,41 @@ header .header-wrap .text-link:hover {
   display: flex;
   justify-content: space-evenly;
   padding: 2.5rem 0;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 @media (max-width: 500px) {
   .info-slides .info-container .tabs {
-    flex-direction: column;
-    font-size: 1.4rem;
+    height: 4.2rem;
+    max-width: 36rem;
+    margin: 3rem auto 0 auto;
+    padding: 0;
+    border: 1px solid #808080;
   }
 }
 .info-slides .info-container .tabs .tab {
-  background: rgba(188, 207, 219, 0.7);
-  padding: 1.5rem;
+  background: #f5f5f5;
+  padding: 1rem;
+  border: 1px solid #808080;
   border-radius: 5px;
+  cursor: pointer;
 }
 @media (max-width: 500px) {
   .info-slides .info-container .tabs .tab {
+    margin-bottom: 0;
+    border: none;
+    border-radius: 0;
     width: 100%;
-    margin-bottom: 0.5rem;
-    text-align: center;
+  }
+}
+@media (max-width: 500px) and (max-width: 500px) {
+  .info-slides .info-container .tabs .tab:nth-child(even) {
+    border-left: 1px solid #808080;
+    border-right: 1px solid #808080;
   }
 }
 .info-slides .info-container .tabs .tab-selected {
-  color: #d32323;
+  color: #e6e6e6;
+  background: #d32323;
 }
 .info-slides .info-container .slide {
   max-width: 36rem;
@@ -386,7 +406,7 @@ footer .footer-wrap a:hover {
   line-height: 1.5;
 }
 .about-us .team-members .profile-box img {
-  border: 5px solid rgba(188, 207, 219, 0.7);
+  border: 5px solid #cddae2;
   border-radius: 100%;
 }
 .about-us .team-members .profile-box h3 {
