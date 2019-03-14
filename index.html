@@ -20,7 +20,7 @@
                     <a href="index.html" class="img-link"><img src="./img/yelp-logo.svg" alt="Yelp"></a>
                     <a href="index.html" class="text-link"><h1>Tacopedia</h1></a>
                 </div>
-                <a href="#" class="text-link">Get Started</a>
+                <a href="#" class="text-link" id="header-start">Get Started</a>
             </div>
         </header>
 
@@ -52,19 +52,25 @@
             </div>
         </section>
 
-        <!-- Info Cards -->
+        <!-- Info Slides -->
 
-        <section class="info-cards">
-            <div class="cards-wrap">
-                <div class="card">Test</div>
-                <div class="card">Test</div>
-                <div class="card">Test</div>
-                <div class="card">Test</div>
-                <div class="card">Test</div>
-                <div class="card">Test</div>
-                <div class="card">Test</div>
-                <div class="card">Test</div>
-                <div class="card">Test</div>
+        <section class="info-slides">
+
+            <!-- Tab Components -->
+            <div class="info-container">
+                <div class="tabs">
+                    <div class="tab tab-selected" data-slide='home'>Home Page</div>
+                    <div class="tab" data-slide='results'>Search Results</div>
+                    <div class="tab" data-slide='business'>Business Page</div>
+                </div>
+
+                <!-- Slide Components -->
+
+                <div class="slides">
+                    <div class="slide active-slide" data-slide="home">slide1</div>
+                    <div class="slide" data-slide="results">slide2</div>
+                    <div class="slide" data-slide="business">slide3</div>
+                </div>
             </div>
         </section>
 
@@ -84,6 +90,8 @@
             </div>
         </footer>
         
+        <script src="./Components/infotabs.js"></script>
+        <script src="./js/links.js"></script>
     </body>
 
 </html>
