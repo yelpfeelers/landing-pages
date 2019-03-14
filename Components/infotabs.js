@@ -1,3 +1,5 @@
+// Info Slide Event Constructor
+
 class InfoTab {
     constructor(tab){
       this.tab = tab;
