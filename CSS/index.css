@@ -305,12 +305,18 @@ header .header-wrap .text-link:hover {
   background: #d32323;
 }
 .info-slides .info-container .slide {
-  max-width: 36rem;
-  height: 64rem;
+  max-width: 30rem;
+  height: auto;
   margin: auto;
-  border: 1px solid lightgrey;
-  background: #f5f5f5;
   display: none;
+}
+@media (max-width: 500px) {
+  .info-slides .info-container .slide {
+    max-width: 100rem;
+  }
+}
+.info-slides .info-container .slide img {
+  width: 100%;
 }
 .info-slides .info-container .active-slide {
   display: block;

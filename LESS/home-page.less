@@ -186,12 +186,18 @@ header {
         }
     
         .slide {
-            max-width: 36rem;
-            height: 64rem; 
+            max-width: 30rem;
+            height: auto;
             margin: auto;
-            border: 1px solid lightgrey;
-            background: @main-bg;
             display: none;
+
+            @media @mobile {
+                max-width: 100rem;
+            }
+
+            img {
+                width: 100%;
+            }
         }
 
         .active-slide {
