@@ -67,10 +67,18 @@ header {
         line-height: 1.2;
         background-color: @showcase-translucent;
 
+        @media @mobile {
+            font-size: 3rem;
+        }
+
         h2 {
             img {
                 vertical-align: text-bottom;
                 height: 6rem;
+
+                @media @mobile {
+                    height: 4.8rem;
+                }
             }
         }
     }
@@ -89,9 +97,8 @@ header {
         font-weight: 500;
         text-align: center;
 
-        img {
-            vertical-align: text-bottom;
-            height: 5rem;
+        @media @mobile {
+            font-size: 2.6rem;
         }
     }
 
@@ -136,6 +143,10 @@ header {
         font-size: 3rem;
         font-weight: 500;
         text-align: center;
+
+        @media @mobile {
+            font-size: 2.6rem;
+        }
     }
 
     .info-container {
@@ -217,8 +228,12 @@ header {
 
     h2 {
         margin-bottom: 1rem;
-        font-size: 2.1rem;
+        font-size: 3rem;
         font-weight: 500;
+
+        @media @mobile {
+            font-size: 2.6rem;
+        }
     }
     
     p {
@@ -280,7 +295,8 @@ footer {
 
             @media @mobile {
                 padding: 1rem;
-                font-size: 3rem;
+                font-size: 2.6rem;
+                text-decoration: underline;
             }
         }
     }

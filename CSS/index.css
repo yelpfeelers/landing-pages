@@ -202,9 +202,19 @@ header .header-wrap .text-link:hover {
   line-height: 1.2;
   background-color: rgba(188, 207, 219, 0.7);
 }
+@media (max-width: 500px) {
+  .showcase .main-heading {
+    font-size: 3rem;
+  }
+}
 .showcase .main-heading h2 img {
   vertical-align: text-bottom;
   height: 6rem;
+}
+@media (max-width: 500px) {
+  .showcase .main-heading h2 img {
+    height: 4.8rem;
+  }
 }
 .main-content {
   margin: 0;
@@ -217,9 +227,10 @@ header .header-wrap .text-link:hover {
   font-weight: 500;
   text-align: center;
 }
-.main-content h2 img {
-  vertical-align: text-bottom;
-  height: 5rem;
+@media (max-width: 500px) {
+  .main-content h2 {
+    font-size: 2.6rem;
+  }
 }
 .main-content .info-boxes {
   display: flex;
@@ -258,6 +269,11 @@ header .header-wrap .text-link:hover {
   font-size: 3rem;
   font-weight: 500;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .info-slides h2 {
+    font-size: 2.6rem;
+  }
 }
 .info-slides .info-container {
   max-width: 100rem;
@@ -330,8 +346,13 @@ header .header-wrap .text-link:hover {
 }
 .get-started h2 {
   margin-bottom: 1rem;
-  font-size: 2.1rem;
+  font-size: 3rem;
   font-weight: 500;
+}
+@media (max-width: 500px) {
+  .get-started h2 {
+    font-size: 2.6rem;
+  }
 }
 .get-started p {
   padding: 0 5rem;
@@ -388,7 +409,8 @@ footer .footer-wrap a:hover {
 @media (max-width: 500px) {
   footer .footer-wrap a {
     padding: 1rem;
-    font-size: 3rem;
+    font-size: 2.6rem;
+    text-decoration: underline;
   }
 }
 .about-us {
