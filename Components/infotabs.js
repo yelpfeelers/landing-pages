@@ -51,7 +51,7 @@ tabs.forEach(function(tab) {
 
 window.addEventListener('resize', function() {
   let count = 0;
-  let tabStrings = ['Home Page', 'Search Results', 'Business Page'];
+  let tabStrings = ['Search Results', 'Business Page', 'Bookmarks'];
 
   if (window.matchMedia('(max-width: 500px)').matches) {
     tabs.forEach(tab => {
